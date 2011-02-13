@@ -1,0 +1,14 @@
+application: <your_appid>
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /_ah/mail/notify@<your_appid>.appspotmail.com
+  script: hipmailer.py 
+
+- url: .*
+  script: main.py
+  
+inbound_services:
+- mail
