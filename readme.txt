@@ -1,8 +1,9 @@
-HipMail is (will be) an application for sending notifications to HipChat.
+HipMail is an application for sending notifications to HipChat.
 
 Why bother?
-HipChat is a great team chat application, that has a very simple API for integrating with other notifications. Typical scenarios for a development team include automated build notifications, source code check-ins, deployments. 
-The lowest common denominator for many tools is the ability to send out event notifications via email, so an email<>hipchat bridge is a very simple way to integrate the two.
+HipChat is a great team chat application, that has a very simple API for integrating with other notifications. 
+Typical scenarios for a development team include automated build notifications, source code check-ins, deployments. 
+The lowest common denominator for many tools is the ability to send out event notifications via email, so an email<>hipchat bridge is a simple way to integrate the two.
 
 HipMail is an AppEngine application that does the following:
 1. Defines an email endpoint for receiving emails.
@@ -18,4 +19,5 @@ NB This is not a hosted application - in order to use it you will need to do the
 3. Download and amend the source code in this repo - updating the AUTH_TOKEN and ROOM_ID variables in the hipmailer.py file
 4. Upload to your own GAE account.
 
-The email address to which to send the notifications will depend on the AppEngine app_id you use.
+The email address to which to send the notifications will depend on the AppEngine app_id you use - more details can be found on the Google help site here - http://code.google.com/appengine/docs/python/mail/receivingmail.html
+
